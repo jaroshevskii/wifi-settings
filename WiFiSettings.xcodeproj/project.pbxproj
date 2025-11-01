@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BBADA10B2EB402DA006B5279 /* UIKitNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = BBADA10A2EB402DA006B5279 /* UIKitNavigation */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BBF1FD022EB3EA270078AE4B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBADA10B2EB402DA006B5279 /* UIKitNavigation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +77,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BBADA10C2EB4041D006B5279 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BBF1FCEB2EB3EA260078AE4B = {
 			isa = PBXGroup;
 			children = (
 				BBF1FCF62EB3EA260078AE4B /* WiFiSettings */,
 				BBF1FD042EB3EA270078AE4B /* WiFiSettingsTests */,
 				BBF1FD0E2EB3EA270078AE4B /* WiFiSettingsUITests */,
+				BBADA10C2EB4041D006B5279 /* Frameworks */,
 				BBF1FCF52EB3EA260078AE4B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +125,7 @@
 			);
 			name = WiFiSettings;
 			packageProductDependencies = (
+				BBADA10A2EB402DA006B5279 /* UIKitNavigation */,
 			);
 			productName = WiFiSettings;
 			productReference = BBF1FCF42EB3EA260078AE4B /* WiFiSettings.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = BBF1FCEB2EB3EA260078AE4B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BBADA1092EB402DA006B5279 /* XCRemoteSwiftPackageReference "swift-navigation" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BBF1FCF52EB3EA260078AE4B /* Products */;
 			projectDirPath = "";
@@ -570,6 +587,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BBADA1092EB402DA006B5279 /* XCRemoteSwiftPackageReference "swift-navigation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-navigation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBADA10A2EB402DA006B5279 /* UIKitNavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBADA1092EB402DA006B5279 /* XCRemoteSwiftPackageReference "swift-navigation" */;
+			productName = UIKitNavigation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BBF1FCEC2EB3EA260078AE4B /* Project object */;
 }
