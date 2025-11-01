@@ -6,12 +6,29 @@
 //
 
 import SwiftUI
+import UIKitNavigation
 
 @main
 struct WiFiSettingsApp: App {
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      UIViewControllerRepresenting {
+        UINavigationController(
+          rootViewController: WiFiSettingsViewController(
+            model: WiFiSettingsModel(
+              foundNetworks: Network.mocks,
+              selectedNetworkID: Network.mocks[1].id,
+              destination: .detail(
+                NetworkDetailModel(
+                  network: Network.mocks[1],
+                  onConfirmForget: {}
+                )
+              )
+            )
+          )
+        )
+      }
+      .ignoresSafeArea()
     }
   }
 }

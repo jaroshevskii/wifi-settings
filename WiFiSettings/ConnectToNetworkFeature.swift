@@ -10,8 +10,9 @@ import UIKit
 import UIKitNavigation
 import SwiftUI
 
-@Observable
-final class ConnectToNetworkModel {
+@MainActor
+@Perceptible
+final class ConnectToNetworkModel: Identifiable {
   var incorrectPasswordAlertIsPresented = false
   var isConnecting = false
   var onConnect: (Network) -> Void
@@ -101,6 +102,7 @@ final class ConnectToNetworkViewController: UIViewController {
   }
 }
 
+@available(iOS 17, *)
 #Preview {
   UINavigationController(
     rootViewController: ConnectToNetworkViewController(

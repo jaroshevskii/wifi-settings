@@ -10,7 +10,8 @@ import UIKit
 import UIKitNavigation
 import SwiftUI
 
-@Observable
+@MainActor
+@Perceptible
 final class NetworkDetailModel {
   var forgetAlertIsPresented: Bool
   let onConfirmForget: () -> Void
@@ -81,6 +82,7 @@ final class NetworkDetailViewController: UIViewController {
   }
 }
 
+@available(iOS 17, *)
 #Preview {
   UINavigationController(
     rootViewController: NetworkDetailViewController(
