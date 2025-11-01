@@ -1,5 +1,9 @@
 # 📱 Wi-Fi Settings
 
+## 🎞️ Demo
+
+https://github.com/user-attachments/assets/3b54f957-e8b3-45cb-ac9f-fdfc46f62113
+
 ## 🧩 Overview
 
 WiFiSettings showcases a modern UIKit architecture built around Observation, DiffableDataSource, and declarative navigation inspired by SwiftUI.
