@@ -1,13 +1,11 @@
 # 📱 Wi-Fi Settings
 
+WiFiSettings showcases a modern UIKit architecture built around Observation, DiffableDataSource, and declarative navigation inspired by SwiftUI.
+It demonstrates how to model system-like features in a scalable, reactive UIKit codebase without external dependencies.
+
 ## 🎞️ Demo
 
 https://github.com/user-attachments/assets/472a0ff6-0fc8-4683-b8e9-54f43671908f
-
-## 🧩 Overview
-
-WiFiSettings showcases a modern UIKit architecture built around Observation, DiffableDataSource, and declarative navigation inspired by SwiftUI.
-It demonstrates how to model system-like features in a scalable, reactive UIKit codebase without external dependencies.
 
 The demo reproduces the iOS Wi-Fi Settings experience:
 - Turning Wi-Fi on/off
